@@ -1,0 +1,36 @@
+/* Tema warna aktif (preset atau kustom). Variabel diisi oleh js/aksesibilitas.js */
+html[data-tema="aktif"] body,
+html[data-tema="aktif"] body *:not(img):not(svg):not(path):not(video):not(canvas):not(a):not(.btn):not(button):not([class*="btn-"]):not(input[type="color"]):not(.a11y-keep) {
+  background-color: var(--a-latar) !important; color: var(--a-teks) !important; border-color: var(--a-teks) !important;
+  background-image: none !important; box-shadow: none !important; text-shadow: none !important;
+}
+html[data-tema="aktif"] a, html[data-tema="aktif"] a * { color: var(--a-tautan) !important; background-color: transparent !important; text-decoration: underline; background-image: none !important; }
+html[data-tema="aktif"] .btn, html[data-tema="aktif"] button, html[data-tema="aktif"] [class*="btn-"], html[data-tema="aktif"] input[type="submit"],
+html[data-tema="aktif"] a.btn, html[data-tema="aktif"] #a11y-toggle {
+  background-color: var(--a-aksen) !important; color: var(--a-aksen-teks) !important; border: 2px solid var(--a-teks) !important;
+  background-image: none !important; box-shadow: none !important; text-decoration: none;
+}
+html[data-tema="aktif"] .btn *, html[data-tema="aktif"] button *, html[data-tema="aktif"] [class*="btn-"] *, html[data-tema="aktif"] #a11y-toggle * {
+  background: transparent !important; color: var(--a-aksen-teks) !important;
+}
+html[data-tema="aktif"] input:not([type="color"]), html[data-tema="aktif"] select, html[data-tema="aktif"] textarea { border: 2px solid var(--a-teks) !important; }
+
+/* Tombol pintasan pengaturan */
+#a11y-toggle { position: fixed; top: 8px; right: 8px; z-index: 99999; width: 46px; height: 46px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  border: 2px solid #1b5e20; background: #fff; color: #1b5e20; font-weight: 700; font-size: 16px; text-decoration: none; box-shadow: 0 2px 6px rgba(0,0,0,.3); }
+
+/* Panel pengaturan */
+.a11y-panel-full { max-width: 640px; margin: 0 auto; }
+.a11y-kartu { background: #fff; border: 1px solid #d5dce2; border-radius: 12px; padding: 12px; margin-bottom: 12px; }
+.a11y-baris { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.a11y-opt { border: 2px solid #1b5e20; background: #fff; color: #1b5e20; border-radius: 10px; padding: 8px 12px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; }
+.a11y-opt.on { background: #1b5e20; color: #fff; }
+.a11y-contoh { line-height: 1; }
+.a11y-mini { border: 1.5px solid #1b5e20; background: #fff; color: #1b5e20; border-radius: 8px; padding: 4px 10px; cursor: pointer; font-size: 13px; }
+.a11y-ket { color: #5f6b76; font-size: 13px; margin: 8px 0 0; }
+.a11y-warna { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 10px; }
+.a11y-warna label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; font-weight: 600; }
+.a11y-warna input[type="color"] { width: 100%; height: 44px; padding: 2px; border: 2px solid #888; border-radius: 8px; background: #fff; }
+.a11y-rasio { margin: 10px 0 0; padding-left: 18px; font-size: 13px; }
+.a11y-pratinjau { border: 2px dashed #9aa7b2; border-radius: 10px; padding: 10px; margin-top: 8px; }
+.a11y-reset { border: 2px solid #b00020; background: #fff; color: #b00020; border-radius: 10px; padding: 10px 14px; font-weight: 600; cursor: pointer; }

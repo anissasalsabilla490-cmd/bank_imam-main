@@ -1,0 +1,17 @@
+/* DASHBOARD PAGE */
+#dashboard-page {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0px auto;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-height: calc(100vh - 256px);
+    padding-bottom: 72px;
+}
+
+.dashboard-header {
+    margin: 0 auto;
+    max-width: 428px;
+    width: 100%;
+}
+

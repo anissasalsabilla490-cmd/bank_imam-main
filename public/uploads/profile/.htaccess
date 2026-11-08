@@ -1,0 +1,17 @@
+# Block PHP and script execution in this upload directory
+# This prevents any uploaded file from being executed as PHP/script
+<FilesMatch "\.(?i:php[0-9]?|phtml|phar|php-s|py|rb|sh|pl|cgi|asp|aspx|jsp|exe|bat|cmd)$">
+    Require all denied
+</FilesMatch>
+
+# Only allow image files
+<FilesMatch "\.(?i:jpg|jpeg|png|gif|webp|svg|ico)$">
+    Require all granted
+</FilesMatch>
+
+# Block all other files by default
+<FilesMatch "^(?!.*\.(jpg|jpeg|png|gif|webp|svg|ico)$).*">
+    Require all denied
+</FilesMatch>
+
+Options -Indexes

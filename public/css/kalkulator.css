@@ -1,0 +1,14 @@
+.kalk { max-width: 720px; margin: 0 auto; font-family: inherit; }
+.kalk-kartu { background: #fff; border: 1px solid #dfe5ea; border-radius: 14px; padding: 14px; margin-bottom: 14px; }
+.kalk-kartu h4 { margin: 0 0 8px; font-size: 16px; font-weight: 700; }
+.kalk-ket { color: #5f6b76; font-size: 13px; margin: 0 0 10px; }
+.kalk input[type=text], .kalk select { width: 100%; box-sizing: border-box; padding: 11px 12px; border: 1.5px solid #9aa7b2; border-radius: 10px; font-size: 16px; background: #fff; color: #111; }
+.kalk-hasil { margin-top: 8px; font-size: 20px; font-weight: 700; color: #0b6b3a; min-height: 28px; }
+.kalk-err { color: #b00020; font-size: 13px; margin-top: 4px; min-height: 18px; }
+.kalk-baris { display: grid; grid-template-columns: 1fr 110px 36px; gap: 8px; align-items: start; padding: 10px 0; border-bottom: 1px dashed #d5dce2; }
+.kalk-baris .kalk-nilai { grid-column: 1 / -1; font-size: 13px; color: #33414d; }
+.kalk-hapus { border: 0; background: #fde8ea; color: #b00020; border-radius: 8px; width: 36px; height: 42px; font-size: 16px; cursor: pointer; }
+.kalk-tombol { border: 2px solid #0b6b3a; background: #fff; color: #0b6b3a; border-radius: 10px; padding: 10px 14px; font-weight: 600; cursor: pointer; font-size: 14px; }
+.kalk-tombol.utama { background: #0b6b3a; color: #fff; }
+.kalk-total { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-top: 12px; padding: 12px; background: #e8f5ee; border-radius: 10px; font-weight: 700; }
+.kalk-total span small { display: block; font-weight: 400; color: #33414d; font-size: 12px; }
